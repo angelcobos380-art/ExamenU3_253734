@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tenis - Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="image/images-2-removebg-preview.png" alt="Logo de la tienda" class="logo-img">
+            <h1>KICK<span>STYLE</span></h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="page2.html" class="active">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Nuestro Catálogo Completo</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterCatalog('all', event)">Todos</button>
+            <button class="filter-btn" onclick="filterCatalog('hombre', event)">Hombre</button>
+            <button class="filter-btn" onclick="filterCatalog('mujer', event)">Mujer</button>
+            <button class="filter-btn" onclick="filterCatalog('ofertas', event)">Ofertas</button>
+        </div>
+
+        <div class="grid-container">
+            <!-- Productos Hombre -->
+            <div class="card product-item hombre all">
+                <div class="card-tag">Hombre</div>
+                <div class="card-img"><img src="image/Zapatillas Popmelon.jpg" alt="Nike Air Max Hombre"></div>
+                <div class="card-info">
+                    <h3>Nike Air Max Hombre</h3>
+                    <p class="price">$199.99</p>
+                </div>
+            </div>
+            <div class="card product-item hombre all">
+                <div class="card-tag">Hombre</div>
+                <div class="card-img"><img src="image/Sneakers Nike AI.png" alt="Nike Jordan Hombre"></div>
+                <div class="card-info">
+                    <h3>Nike Jordan Hombre</h3>
+                    <p class="price">$249.99</p>
+                </div>
+            </div>
+            <div class="card product-item hombre all">
+                <div class="card-tag">Hombre</div>
+                <div class="card-img"><img src="image/Sneakers AI Generated.jpg" alt="Nike Air Force Hombre"></div>
+                <div class="card-info">
+                    <h3>Nike Air Force Hombre</h3>
+                    <p class="price">$189.99</p>
+                </div>
+            </div>
+            <div class="card product-item hombre all">
+                <div class="card-tag">Hombre</div>
+                <div class="card-img"><img src="image/Zapatillas gratis 1920.jpg" alt="Nike Runners Hombre"></div>
+                <div class="card-info">
+                    <h3>Nike Runners Hombre</h3>
+                    <p class="price">$179.99</p>
+                </div>
+            </div>
+
+            <!-- Productos Mujer -->
+            <div class="card product-item mujer all">
+                <div class="card-tag">Mujer</div>
+                <div class="card-img"><img src="image/Zapatillas gratis Pixabay.png" alt="Nike Air Max Mujer"></div>
+                <div class="card-info">
+                    <h3>Nike Air Max Mujer</h3>
+                    <p class="price">$189.99</p>
+                </div>
+            </div>
+            <div class="card product-item mujer all">
+                <div class="card-tag">Mujer</div>
+                <div class="card-img"><img src="image/Sneakers Nike AI.png" alt="Nike Flex Mujer"></div>
+                <div class="card-info">
+                    <h3>Nike Flex Mujer</h3>
+                    <p class="price">$159.99</p>
+                </div>
+            </div>
+            <div class="card product-item mujer all">
+                <div class="card-tag">Mujer</div>
+                <div class="card-img"><img src="image/Sneakers AI Generated.jpg" alt="Nike Court Mujer"></div>
+                <div class="card-info">
+                    <h3>Nike Court Mujer</h3>
+                    <p class="price">$169.99</p>
+                </div>
+            </div>
+            <div class="card product-item mujer all">
+                <div class="card-tag">Mujer</div>
+                <div class="card-img"><img src="image/Zapatillas Popmelon.jpg" alt="Nike Urban Mujer"></div>
+                <div class="card-info">
+                    <h3>Nike Urban Mujer</h3>
+                    <p class="price">$199.99</p>
+                </div>
+            </div>
+
+            <!-- Productos en Oferta -->
+            <div class="card product-item ofertas all">
+                <div class="card-tag" style="background: #20bf6b;">-25%</div>
+                <div class="card-img"><img src="image/Sneakers Nike AI.png" alt="Nike Pro Oferta"></div>
+                <div class="card-info">
+                    <h3>Nike Pro Oferta</h3>
+                    <p class="price"><span class="old-price">Antes: $280</span><br>Ahora: $210</p>
+                </div>
+            </div>
+            <div class="card product-item ofertas all">
+                <div class="card-tag" style="background: #eb3b5a;">-40%</div>
+                <div class="card-img"><img src="image/Sneakers AI Generated.jpg" alt="Nike Premium Oferta"></div>
+                <div class="card-info">
+                    <h3>Nike Premium Oferta</h3>
+                    <p class="price"><span class="old-price">Antes: $350</span><br>Ahora: $210</p>
+                </div>
+            </div>
+            <div class="card product-item ofertas all">
+                <div class="card-tag" style="background: #20bf6b;">-35%</div>
+                <div class="card-img"><img src="image/Zapatillas Popmelon.jpg" alt="Nike Elite Oferta"></div>
+                <div class="card-info">
+                    <h3>Nike Elite Oferta</h3>
+                    <p class="price"><span class="old-price">Antes: $300</span><br>Ahora: $195</p>
+                </div>
+            </div>
+            <div class="card product-item ofertas all">
+                <div class="card-tag" style="background: #eb3b5a;">-50%</div>
+                <div class="card-img"><img src="image/Zapatillas gratis 1920.jpg" alt="Nike Mega Oferta"></div>
+                <div class="card-info">
+                    <h3>Nike Mega Oferta</h3>
+                    <p class="price"><span class="old-price">Antes: $400</span><br>Ahora: $200</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="image/images-2-removebg-preview.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="image/images-2-removebg-preview.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="image/images-2-removebg-preview.png" alt="TikTok">
+                <span>TikTok</span>
+            </a>
+        </div>
+        <p>&copy; 2026 KICKSTYLE - Examen Unidad 3. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</html>
