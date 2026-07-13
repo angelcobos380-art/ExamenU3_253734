@@ -10,13 +10,14 @@
 
     <header class="header">
         <div class="logo">
-            <img src="image/images-2-removebg-preview.png" alt="Logo de la tienda" class="logo-img">
+            <img src="/images-2-removebg-preview.png" alt="Logo de la tienda" class="logo-img">
             <h1>KICK<span>STYLE</span></h1>
         </div>
         <nav class="nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="page2.html" class="active">Catálogo</a></li>
+                <li><a href="carrito.html" class="carrito-icon">🛒 (0)</a></li>
             </ul>
         </nav>
     </header>
@@ -25,112 +26,122 @@
         <h2 class="section-title">Nuestro Catálogo Completo</h2>
         
         <div class="filter-buttons">
-            <button class="filter-btn active" onclick="filterCatalog('all', event)">Todos</button>
-            <button class="filter-btn" onclick="filterCatalog('hombre', event)">Hombre</button>
-            <button class="filter-btn" onclick="filterCatalog('mujer', event)">Mujer</button>
-            <button class="filter-btn" onclick="filterCatalog('ofertas', event)">Ofertas</button>
+            <button class="filter-btn active" onclick="filterCatalog('caballero', event)">Caballero</button>
+            <button class="filter-btn" onclick="filterCatalog('dama', event)">Dama</button>
         </div>
 
         <div class="grid-container">
-            <!-- Productos Hombre -->
-            <div class="card product-item hombre all">
-                <div class="card-tag">Hombre</div>
-                <div class="card-img"><img src="image/Zapatillas Popmelon.jpg" alt="Nike Air Max Hombre"></div>
+            <!-- Productos Caballero -->
+            <div class="card product-item caballero all">
+                <div class="card-tag">Caballero</div>
+                <div class="card-img"><img src="/Zapatillas Popmelon.jpg" alt="Nike Air Max Caballero"></div>
                 <div class="card-info">
-                    <h3>Nike Air Max Hombre</h3>
+                    <h3>Nike Air Max Caballero</h3>
                     <p class="price">$199.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Air Max Caballero', '199.99', 'image/Zapatillas Popmelon.jpg', 'Caballero')">Agregar al Carrito</button>
                 </div>
             </div>
-            <div class="card product-item hombre all">
-                <div class="card-tag">Hombre</div>
-                <div class="card-img"><img src="image/Sneakers Nike AI.png" alt="Nike Jordan Hombre"></div>
+            <div class="card product-item caballero all">
+                <div class="card-tag">Caballero</div>
+                <div class="card-img"><img src="/Sneakers Nike AI.png" alt="Nike Jordan Caballero"></div>
                 <div class="card-info">
-                    <h3>Nike Jordan Hombre</h3>
+                    <h3>Nike Jordan Caballero</h3>
                     <p class="price">$249.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Jordan Caballero', '249.99', 'image/Sneakers Nike AI.png', 'Caballero')">Agregar al Carrito</button>
                 </div>
             </div>
-            <div class="card product-item hombre all">
-                <div class="card-tag">Hombre</div>
-                <div class="card-img"><img src="image/Sneakers AI Generated.jpg" alt="Nike Air Force Hombre"></div>
+            <div class="card product-item caballero all">
+                <div class="card-tag">Caballero</div>
+                <div class="card-img"><img src="/Sneakers AI Generated.jpg" alt="Nike Air Force Caballero"></div>
                 <div class="card-info">
-                    <h3>Nike Air Force Hombre</h3>
+                    <h3>Nike Air Force Caballero</h3>
                     <p class="price">$189.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Air Force Caballero', '189.99', 'image/Sneakers AI Generated.jpg', 'Caballero')">Agregar al Carrito</button>
                 </div>
             </div>
-            <div class="card product-item hombre all">
-                <div class="card-tag">Hombre</div>
-                <div class="card-img"><img src="image/Zapatillas gratis 1920.jpg" alt="Nike Runners Hombre"></div>
+            <div class="card product-item caballero all">
+                <div class="card-tag">Caballero</div>
+                <div class="card-img"><img src="/Zapatillas gratis 1920.jpg" alt="Nike Runners Caballero"></div>
                 <div class="card-info">
-                    <h3>Nike Runners Hombre</h3>
+                    <h3>Nike Runners Caballero</h3>
                     <p class="price">$179.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Runners Caballero', '179.99', 'image/Zapatillas gratis 1920.jpg', 'Caballero')">Agregar al Carrito</button>
                 </div>
             </div>
 
-            <!-- Productos Mujer -->
-            <div class="card product-item mujer all">
-                <div class="card-tag">Mujer</div>
-                <div class="card-img"><img src="image/Zapatillas gratis Pixabay.png" alt="Nike Air Max Mujer"></div>
+            <!-- Productos Dama -->
+            <div class="card product-item dama all">
+                <div class="card-tag">Dama</div>
+                <div class="card-img"><img src="/Zapatillas gratis Pixabay.png" alt="Nike Air Max Dama"></div>
                 <div class="card-info">
-                    <h3>Nike Air Max Mujer</h3>
+                    <h3>Nike Air Max Dama</h3>
                     <p class="price">$189.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Air Max Dama', '189.99', 'image/Zapatillas gratis Pixabay.png', 'Dama')">Agregar al Carrito</button>
                 </div>
             </div>
-            <div class="card product-item mujer all">
-                <div class="card-tag">Mujer</div>
-                <div class="card-img"><img src="image/Sneakers Nike AI.png" alt="Nike Flex Mujer"></div>
+            <div class="card product-item dama all">
+                <div class="card-tag">Dama</div>
+                <div class="card-img"><img src="/Sneakers Nike AI.png" alt="Nike Flex Dama"></div>
                 <div class="card-info">
-                    <h3>Nike Flex Mujer</h3>
+                    <h3>Nike Flex Dama</h3>
                     <p class="price">$159.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Flex Dama', '159.99', 'image/Sneakers Nike AI.png', 'Dama')">Agregar al Carrito</button>
                 </div>
             </div>
-            <div class="card product-item mujer all">
-                <div class="card-tag">Mujer</div>
-                <div class="card-img"><img src="image/Sneakers AI Generated.jpg" alt="Nike Court Mujer"></div>
+            <div class="card product-item dama all">
+                <div class="card-tag">Dama</div>
+                <div class="card-img"><img src="/Sneakers AI Generated.jpg" alt="Nike Court Dama"></div>
                 <div class="card-info">
-                    <h3>Nike Court Mujer</h3>
+                    <h3>Nike Court Dama</h3>
                     <p class="price">$169.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Court Dama', '169.99', 'image/Sneakers AI Generated.jpg', 'Dama')">Agregar al Carrito</button>
                 </div>
             </div>
-            <div class="card product-item mujer all">
-                <div class="card-tag">Mujer</div>
-                <div class="card-img"><img src="image/Zapatillas Popmelon.jpg" alt="Nike Urban Mujer"></div>
+            <div class="card product-item dama all">
+                <div class="card-tag">Dama</div>
+                <div class="card-img"><img src="/Zapatillas Popmelon.jpg" alt="Nike Urban Dama"></div>
                 <div class="card-info">
-                    <h3>Nike Urban Mujer</h3>
+                    <h3>Nike Urban Dama</h3>
                     <p class="price">$199.99</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Urban Dama', '199.99', 'image/Zapatillas Popmelon.jpg', 'Dama')">Agregar al Carrito</button>
                 </div>
             </div>
 
             <!-- Productos en Oferta -->
             <div class="card product-item ofertas all">
                 <div class="card-tag" style="background: #20bf6b;">-25%</div>
-                <div class="card-img"><img src="image/Sneakers Nike AI.png" alt="Nike Pro Oferta"></div>
+                <div class="card-img"><img src="/Sneakers Nike AI.png" alt="Nike Pro Oferta"></div>
                 <div class="card-info">
                     <h3>Nike Pro Oferta</h3>
                     <p class="price"><span class="old-price">Antes: $280</span><br>Ahora: $210</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Pro Oferta', '210.00', 'image/Sneakers Nike AI.png', 'Oferta')">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="card product-item ofertas all">
                 <div class="card-tag" style="background: #eb3b5a;">-40%</div>
-                <div class="card-img"><img src="image/Sneakers AI Generated.jpg" alt="Nike Premium Oferta"></div>
+                <div class="card-img"><img src="/Sneakers AI Generated.jpg" alt="Nike Premium Oferta"></div>
                 <div class="card-info">
                     <h3>Nike Premium Oferta</h3>
                     <p class="price"><span class="old-price">Antes: $350</span><br>Ahora: $210</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Premium Oferta', '210.00', 'image/Sneakers AI Generated.jpg', 'Oferta')">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="card product-item ofertas all">
                 <div class="card-tag" style="background: #20bf6b;">-35%</div>
-                <div class="card-img"><img src="image/Zapatillas Popmelon.jpg" alt="Nike Elite Oferta"></div>
+                <div class="card-img"><img src="/Zapatillas Popmelon.jpg" alt="Nike Elite Oferta"></div>
                 <div class="card-info">
                     <h3>Nike Elite Oferta</h3>
                     <p class="price"><span class="old-price">Antes: $300</span><br>Ahora: $195</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Elite Oferta', '195.00', 'image/Zapatillas Popmelon.jpg', 'Oferta')">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="card product-item ofertas all">
                 <div class="card-tag" style="background: #eb3b5a;">-50%</div>
-                <div class="card-img"><img src="image/Zapatillas gratis 1920.jpg" alt="Nike Mega Oferta"></div>
+                <div class="card-img"><img src="/Zapatillas gratis 1920.jpg" alt="Nike Mega Oferta"></div>
                 <div class="card-info">
                     <h3>Nike Mega Oferta</h3>
                     <p class="price"><span class="old-price">Antes: $400</span><br>Ahora: $200</p>
+                    <button class="btn-carrito" onclick="agregarAlCarrito('Nike Mega Oferta', '200.00', 'image/Zapatillas gratis 1920.jpg', 'Oferta')">Agregar al Carrito</button>
                 </div>
             </div>
         </div>
@@ -138,17 +149,17 @@
 
     <footer class="footer">
         <div class="social-links">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="image/images-2-removebg-preview.png" alt="Facebook">
-                <span>Facebook</span>
+            <a href="https://www.upchiapas.edu.mx" target="_blank">
+                <img src="/images-2-removebg-preview.png" alt="UPChiapas">
+                <span>Universidad Politécnica de Chiapas</span>
             </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="image/images-2-removebg-preview.png" alt="Instagram">
-                <span>Instagram</span>
+            <a href="https://www.upchiapas.edu.mx/programas" target="_blank">
+                <img src="/images-2-removebg-preview.png" alt="Programas UPChiapas">
+                <span>Programas Académicos</span>
             </a>
-            <a href="https://www.tiktok.com" target="_blank">
-                <img src="image/images-2-removebg-preview.png" alt="TikTok">
-                <span>TikTok</span>
+            <a href="https://www.upchiapas.edu.mx/contacto" target="_blank">
+                <img src="/images-2-removebg-preview.png" alt="Contacto UPChiapas">
+                <span>Contacto</span>
             </a>
         </div>
         <p>&copy; 2026 KICKSTYLE - Examen Unidad 3. Todos los derechos reservados.</p>
